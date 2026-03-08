@@ -1,0 +1,4 @@
+exclude:
+  - API
+  - API/node_modules
+  - node_modules
