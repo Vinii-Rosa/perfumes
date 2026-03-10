@@ -5,30 +5,30 @@ import { SalesProducts } from './salesProducts';
 function App() {
 
   return (
-    <div className='container gap-20'>
+    <div class='grid grid-rows-[1fr_375px] min-h-dvh gap-20'>
 
-      <header className='header-container'>
-        <div className='nav-container'>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
-            <h2 style={{ fontWeight: 400 }}>
+      <header class="grid grid-cols-1 xl:grid-cols-[1fr_1280px_1fr] w-full h-[65px] fixed bg-white">
+        <div class='grid xl:col-start-2 xl:col-end-3 grid-cols-3 '>
+          <div class="flex justify-start items-center">
+            <h2 class="font-normal">
               ESSÊNCIA
             </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", alignItems: "center", justifyContent: "center" }}>
-            <div className='fb-align-center '>
-              <text className='nav-text'>Catalogo</text>
+          <div class="grid grid-cols-4">
+            <div class='flex justify-center items-center'>
+              <text class='text-sm text-gray-500 font-[Inter,sans-serif]'>Catalogo</text>
             </div>
-            <div className='fb-align-center '>
-              <text className='nav-text'>Masculino</text>
+            <div class='flex justify-center items-center'>
+              <text class='text-sm text-gray-500 font-[Inter,sans-serif]'>Masculino</text>
             </div>
-            <div className='fb-align-center '>
-              <text className='nav-text'>Feminino</text>
+            <div class='flex justify-center items-center'>
+              <text class='text-sm text-gray-500 font-[Inter,sans-serif]'>Feminino</text>
             </div>
-            <div className='fb-align-center'>
-              <text className='nav-text'>Unissex</text>
+            <div class='flex justify-center items-center'>
+              <text class='text-sm text-gray-500 font-[Inter,sans-serif]'>Unissex</text>
             </div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "auto auto", alignItems: "center", justifyContent: "flex-end", gap: "10px" }}>
+          <div class="grid grid-cols-[auto_auto] justify-end items-center gap-5">
             <div>Busca</div>
             <div>Carrinho</div>
           </div>
