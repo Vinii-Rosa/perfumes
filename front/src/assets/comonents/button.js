@@ -1,24 +1,10 @@
 export const StylesButton = ({
-    width = "200px",
-    height = "50px",
-    borderRadius = "10px",
-    backGround,
     text,
-    className
+    width,
+    height
 }) => {
     return (
-        <button
-            className={`styles-button ${className}`}
-            style={{
-                width: width,
-                height: height,
-                borderRadius: borderRadius,
-                backgroundColor: backGround,
-                border: "none",
-                cursor: "pointer"
-                
-            }}
-        >
+        <button className={`text-white rounded-none text-sm cursor-pointer border-none bg-[#ba985e] font-semibold filter hover:bg-[#7e6335] ${width} ${height}`}>
             {text}
         </button>
     );
